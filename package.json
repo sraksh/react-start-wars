@@ -1,25 +1,27 @@
 {
-  "name": "my-app",
+  "name": "react-start-news",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sraksh.github.io/react-start-wars",
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "react-scripts": "0.6.1"
+  },
   "dependencies": {
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^4.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^4.0.6",
+    "redux": "^3.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  }
 }
